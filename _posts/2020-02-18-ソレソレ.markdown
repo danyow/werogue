@@ -1,0 +1,17 @@
+---
+layout  : post
+title   : "山东 山东"
+date    : 2020-02-17 23:00:00 +0800
+tags    : 音乐 封面 中国
+color   : rgb(221,86,119)
+cover   : 'http://p2.music.126.net/H-e50uk7wO9OwrXridKiWA==/900500023148932.jpg'
+subtitle: "ソレソレ"
+resource:
+  netmusic: 'https://music.163.com/#/song?id=29307597'
+---
+
+![cover](http://p2.music.126.net/H-e50uk7wO9OwrXridKiWA==/900500023148932.jpg)
+
+[原版](https://music.163.com/#/song?id=755131)
+
+PS: 原版本听不了了好像是

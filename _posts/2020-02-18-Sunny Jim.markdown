@@ -1,0 +1,13 @@
+---
+layout  : post
+title   : "听到会有开心吗"
+date    : 2020-02-17 23:00:00 +0800
+tags    : 音乐 封面
+color   : rgb(249,229,149)  #rgb(152,149,141)
+cover   : 'http://p1.music.126.net/5zj2qK6nKWgQ_DUfoCuWmg==/619025046446186.jpg'
+subtitle: "Sunny Jim"
+resource:
+  netmusic: 'https://music.163.com/#/song?id=17423740'
+---
+
+![cover](http://p1.music.126.net/5zj2qK6nKWgQ_DUfoCuWmg==/619025046446186.jpg)
