@@ -26,17 +26,17 @@ portraits: '/assets/profile.jpg' # your portraits image file path
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:i.zuucol@gmail.com'
-  weixin: '../assets/profile.jpg' # 你的微信二维码存放的地址
+  weixin: '../assets/qrcode.wechat.png' # 你的微信二维码存放的地址
   # qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/danyow'
   # Codepen: ''
-  # weibo: ''
-  # instagram: ''
-  # Twitter: ''
+  weibo: 'https://weibo.com/u/2190813887'
+  instagram: 'https://www.instagram.com/danyowed'
+  Twitter: 'https://twitter.com/danyowed'
   # Dribbble: ''
   # Facebook: ''
   # Google: ''
-  # zhihu: ''
+  zhihu: 'https://www.zhihu.com/people/danyowed'
   # juejin: ''
   # twitch: ''
 
@@ -46,7 +46,7 @@ paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 2020
 
 # Markdown
 markdown: kramdown
@@ -71,22 +71,22 @@ disqus_url: '' # https://abc.disqus.com/embed.js
 livere: false
 livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg=='
 # Gitment评论 OAuth Application
-Gitment: false
-Gitment_owner: ''  # github用户名
-Gitment_repo: ''  # github博客存放的仓库名
-client_id: ''  # 注册 OAuth Application 后获得的 client_id
-client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
+Gitment: true
+Gitment_owner: 'danyow'  # github用户名
+Gitment_repo: 'werogue'  # github博客存放的仓库名
+client_id: 'fd75cc92f60d49935050'  # 注册 OAuth Application 后获得的 client_id
+client_secret: 'c60ee2d21b758ed39eae57e0592592f35146b942'  # 注册 OAuth Application 后获得的 client_secret
 
 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
 social-share: true
-social-share-items: ['qq', 'wechat', 'weibo']
+social-share-items: ['wechat', 'weibo', 'douban', 'qq', 'qzone']
 
 # 百度统计 在baidu-url里填写自己相关的url代码
-baidu: false
-baidu-url: ''
+baidu: true
+baidu-url: 'b24faa7b3b06c200499d49a031f8fc8a'
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+google: true
+google-ID: 'G-DCWQHCZV1D'
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
 color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
