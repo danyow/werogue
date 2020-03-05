@@ -71,9 +71,9 @@ disqus_url: '' # https://abc.disqus.com/embed.js
 livere: false
 livere_uid: ''
 # Gitment评论 OAuth Application
-Gitment: false
+Gitment: true
 # Gitalk评论 OAuth Application
-Gitalk: true
+Gitalk: false
 # git评论相关
 Github_owner: 'danyow'  # github用户名
 Github_repo: 'werogue'  # github博客存放的仓库名
