@@ -27,16 +27,16 @@ SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:i.zuucol@gmail.com'
   weixin: '../assets/qrcode.wechat.png' # 你的微信二维码存放的地址
-  # qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/danyow'
-  # Codepen: ''
   weibo: 'https://weibo.com/u/2190813887'
   instagram: 'https://www.instagram.com/danyowed'
   Twitter: 'https://twitter.com/danyowed'
+  zhihu: 'https://www.zhihu.com/people/danyowed'
+  # qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  # Codepen: ''
   # Dribbble: ''
   # Facebook: ''
   # Google: ''
-  zhihu: 'https://www.zhihu.com/people/danyowed'
   # juejin: ''
   # twitch: ''
 
@@ -69,11 +69,14 @@ disqus: false
 disqus_url: '' # https://abc.disqus.com/embed.js
 # 来必力评论
 livere: false
-livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg=='
+livere_uid: ''
 # Gitment评论 OAuth Application
-Gitment: true
-Gitment_owner: 'danyow'  # github用户名
-Gitment_repo: 'werogue'  # github博客存放的仓库名
+Gitment: false
+# Gitalk评论 OAuth Application
+Gitalk: true
+# git评论相关
+Github_owner: 'danyow'  # github用户名
+Github_repo: 'werogue'  # github博客存放的仓库名
 client_id: 'fd75cc92f60d49935050'  # 注册 OAuth Application 后获得的 client_id
 client_secret: 'c60ee2d21b758ed39eae57e0592592f35146b942'  # 注册 OAuth Application 后获得的 client_secret
 
