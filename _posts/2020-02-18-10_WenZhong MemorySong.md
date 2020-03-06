@@ -11,4 +11,3 @@ resource:
 published: true
 ---
 
-![cover](http://p2.music.126.net/b-qV4fW1Fd7LZ4Bi1ZdXLw==/109951163366530084.jpg)

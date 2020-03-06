@@ -10,5 +10,3 @@ resource:
   netmusic: 'https://music.163.com/#/song?id=436668736'
 published: true
 ---
-
-![cover](http://p1.music.126.net/OmovCJ6our_UChbq5-Gp9A==/18231002300617908.jpg)
