@@ -1,5 +1,7 @@
 {% if page.cover %}
-<p>
-    <img src="{{ page.cover }}" alt="cover">
-</p>
+  {% if page.resource.music %}
+  <a href="{{ page.resource.music }}"><img src="{{ page.cover }}" alt="cover"></a>
+  {% else %}
+  <img src="{{ page.cover }}" alt="cover">
+  {% endif %}
 {% endif %}

@@ -223,6 +223,10 @@ a{
   font-size:18px;
   color: #555;
 }
+.post-artist{
+  font-size:16px;
+  color: #777;
+}
 .post-excerpt{
   font-size:18px;
   color: #555;
@@ -537,6 +541,28 @@ a{
   text-align: center;
   background-color: #fafbfc;
   margin: 0 10% 20px 10%;
+  font-size: 20px;
+}
+.postpage-music{
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background-color: #fafbfc;
+  margin: 0 10% 20px 10%;
+  font-size: 20px;
+}
+.postpage-artist{
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background-color: #fafbfc;
+  margin: 0 20% 20px 20%;
   font-size: 20px;
 }
 .markdown-body:hover{

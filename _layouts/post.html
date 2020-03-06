@@ -17,24 +17,32 @@
 <!-- 引入博文顶部样式 -->
 {% include post-title.html %}
 <div class="markdown-body fadeInUp animated">
-
-  {% if page.subtitle %}
+  {% if page.music %}
     {% if page.color.size==0 or page.color==nil %}
-      <div class="postpage-subtitle" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
-        {{ page.subtitle }}
+      <div class="postpage-music" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+        <a href="{{ page.resource.music }}">{{ page.music }}</a>
       </div>
     {% else %}
-      <div class="postpage-subtitle" style="border-left: 8px solid {{ page.color }}; border-right: 8px solid {{ page.color }}">
-        {{ page.subtitle }}
+      <div class="postpage-music" style="border-left: 8px solid {{ page.color }}; border-right: 8px solid {{ page.color }}">
+        <a href="{{ page.resource.music }}">{{ page.music }}</a>
       </div>
     {% endif %}
   {% endif %}
   <!-- 引入post-cover模块 -->
   {% include post-cover.html %}
+  {% if page.artist %}
+    {% if page.color.size==0 or page.color==nil %}
+      <div class="postpage-artist" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+        <a href="{{ page.resource.artist }}">{{ page.artist }}</a>
+      </div>
+    {% else %}
+    <div class="postpage-artist" style="border-left: 1px solid {{ page.color }}; border-right: 1px solid {{ page.color }}">
+        <a href="{{ page.resource.artist }}">{{ page.artist }}</a>
+      </div>
+    {% endif %}
+  {% endif %}
   <!-- 文章内容 -->
   {{ page.content }}
-  <!-- 引入resource模块 -->
-  {% include resource.html %}
   <!-- 引入share模块 -->
   {% include share.html %}
 </div>
