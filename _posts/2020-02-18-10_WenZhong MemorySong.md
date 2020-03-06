@@ -8,6 +8,7 @@ cover   : 'http://p2.music.126.net/b-qV4fW1Fd7LZ4Bi1ZdXLw==/109951163366530084.j
 subtitle: "WenZhong MemorySong"
 resource:
   netmusic: 'https://music.163.com/#/song?id=574609918'
+published: true
 ---
 
 ![cover](http://p2.music.126.net/b-qV4fW1Fd7LZ4Bi1ZdXLw==/109951163366530084.jpg)

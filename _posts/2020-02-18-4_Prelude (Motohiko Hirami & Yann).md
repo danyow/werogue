@@ -8,6 +8,7 @@ cover   : 'http://p1.music.126.net/KMpEs5LfHd0aUAl_qqU1UQ==/5973646673962617.jpg
 subtitle: "Prelude (Motohiko Hirami & Yann)"
 resource:
   netmusic: 'https://music.163.com/#/song?id=28587913'
+published: true
 ---
 
 ![cover](http://p1.music.126.net/KMpEs5LfHd0aUAl_qqU1UQ==/5973646673962617.jpg)

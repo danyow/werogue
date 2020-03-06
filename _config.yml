@@ -68,10 +68,10 @@ friends:
 disqus: false
 disqus_url: '' # https://abc.disqus.com/embed.js
 # 来必力评论
-livere: false
-livere_uid: ''
+livere: true
+livere_uid: 'MTAyMC80ODk2Mi8yNTQ1Ng=='
 # Gitment评论 OAuth Application
-Gitment: true
+Gitment: false
 # Gitalk评论 OAuth Application
 Gitalk: false
 # git评论相关

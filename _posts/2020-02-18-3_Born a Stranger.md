@@ -8,6 +8,7 @@ cover   : 'http://p1.music.126.net/0AYWra9rCzgeprGp6OUyUw==/868614185993997.jpg'
 subtitle: "Born a Stranger"
 resource:
   netmusic: 'https://music.163.com/#/song?id=1645108'
+published: true
 ---
 
 ![cover](http://p1.music.126.net/0AYWra9rCzgeprGp6OUyUw==/868614185993997.jpg)
