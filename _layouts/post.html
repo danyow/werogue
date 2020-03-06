@@ -32,12 +32,20 @@
   {% include post-cover.html %}
   {% if page.artist %}
     {% if page.color.size==0 or page.color==nil %}
-      <div class="postpage-artist" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+      <div class="postpage-artist" style="border-left: 1px solid #9A85FF; border-right: 1px solid #9A85FF;">
         <a href="{{ page.resource.artist }}">{{ page.artist }}</a>
       </div>
     {% else %}
-    <div class="postpage-artist" style="border-left: 1px solid {{ page.color }}; border-right: 1px solid {{ page.color }}">
-        <a href="{{ page.resource.artist }}">{{ page.artist }}</a>
+      <div class="postpage-artist" style="border-left: 1px solid {{ page.color }}; border-right: 1px solid {{ page.color }}">
+        {% if page.artist.size > 0 %}
+          {% for artist in page.artist %}
+            {% if forloop.first == true %}
+              <a href="{{ page.resource.artist[forloop.index0] }}">{{ artist }}</a>
+            {% else %}
+              / <a href="{{ page.resource.artist[forloop.index0] }}">{{ artist }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
     {% endif %}
   {% endif %}

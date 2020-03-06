@@ -9,8 +9,19 @@
               {% if post.subtitle %}
               <h3 class="post-subtitle">{{ post.subtitle }}</h3>
               {% endif %}
-              {% if post.artist %}
-              <h3 class="post-artist">{{ post.artist }}</h3>
+              {% if post.music %}
+              <h3 class="post-music">{{ post.music }}</h3>
+              {% endif %}
+              {% if post.artist.size > 0 %}
+                <h3 class="post-artist">
+                  {% for artist in post.artist %}
+                    {% if forloop.first == true %}
+                      {{ artist }}
+                    {% else %}
+                      / {{ artist }}
+                    {% endif %}
+                  {% endfor %}
+                </h3>
               {% endif %}
               {% if post.subtitle.size==0 or post.subtitle==nil %}
               <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
