@@ -3,7 +3,7 @@ layout  : post
 title   : "听说你要28了"
 date    : 2020-02-18 22:00:00 +0800
 tags    : 音乐 封面 日本
-color   : rgb(253,253,241)
+color   : RGB(253, 253, 241)
 cover   : 'http://p1.music.126.net/ohmeuQtPfdDU2aLXtNarKw==/910395627798811.jpg'
 subtitle: "28"
 resource:
