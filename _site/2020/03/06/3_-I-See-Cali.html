@@ -123,8 +123,8 @@ var _hmt = _hmt || [];
   <!-- 页面宽度大于800px -->
   <div class="left-area">
     
-      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='RGB(219, 159, 55)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:RGB(219, 159, 55);"><sapn class="main">没有上一页咯</sapn></span></div>
+      <a href="/2020/03/06/4_%E6%B7%B1%E5%91%BC%E5%90%B8.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='RGB(219, 159, 55)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:RGB(219, 159, 55);"><sapn class="main">一步一步向前</sapn></span></div>
     
   </div>
   <div class="post-titlearea">
@@ -143,7 +143,7 @@ var _hmt = _hmt || [];
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     
-      <a href="javascript:;" class="leftchange" style="border-right: 1px solid RGB(219, 159, 55);border-bottom: 2px solid RGB(219, 159, 55);"><span><br>没有上一篇咯</span></a>
+      <a href="/2020/03/06/4_%E6%B7%B1%E5%91%BC%E5%90%B8.html" class="leftchange" style="border-right: 1px solid RGB(219, 159, 55);border-bottom: 2px solid RGB(219, 159, 55);"><span>上一篇<br><br>一步一步向前</span></a>
     
     
       <a href="/2020/03/06/2_City-of-Tears.html" class="rightchange" style="border-left: 1px solid RGB(219, 159, 55);border-bottom: 2px solid RGB(219, 159, 55);"><span>下一篇<br><br>泪城！我来了！</span></a>
@@ -234,28 +234,24 @@ var _hmt = _hmt || [];
 <a id="htmldown" name="htmldown"></a>
 <!-- 引入评论模块 -->
 
+  <section class="post-footer-item comment">
+    <div id="vcomments"></div>
+  </section>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    new Valine({
+      el: '#vcomments' ,
+      appId: '8p5b5ijAhra6L5yC2Bx35j5I-9Nh9j0Va',
+      appKey: '3JSPKAso6Dos7iClmAqOpLzQ',
+      notify:false, 
+      verify:false, 
+      avatar:'mp', 
+      placeholder: 'just say something' 
+    });
+  </script>
 
 
-    <section class="post-footer-item comment">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80ODk2Mi8yNTQ1Ng=="></div>
-    </section>
 
-    <!-- 来必力City版安装代码 -->
-    <script type="text/javascript">
-       (function(d, s) {
-           var j, e = d.getElementsByTagName(s)[0];
-
-           if (typeof LivereTower === 'function') { return; }
-
-           j = d.createElement(s);
-           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-           j.async = true;
-
-           e.parentNode.insertBefore(j, e);
-       })(document, 'script');
-    </script>
-    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    <!-- City版安装代码已完成 -->
 
 
 
@@ -270,7 +266,7 @@ var _hmt = _hmt || [];
         Top
     </div>
   </a>
-  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+  <a title="底部有评论哦" class="gotobottom" href="#htmldown" target="_self">
     <div class="box" style="font-family:'ffad_matroregular';">
         Foot
     </div>

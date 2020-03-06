@@ -13,10 +13,12 @@ resource:
 published: true
 ---
 
+下面是关于这位作者的`About Me`
+
+```md
 Hi there,
 
 My name is Luozhan.Song, usually I use “songroger” as my ID everywhere.
 I was born and raised in Hunan China.
 I’m really fond of beautiful design, drawing etc.
-
-这是关于这位作者的
+```

@@ -13,4 +13,6 @@ resource:
 published: true
 ---
 
-这首歌的歌名有待查证，因为网易云是`Sundaland of mind`, 其他几个平台是`Sundaland on mind`
+这首歌的歌名有待查证
+
+因为网易云是`Sundaland of mind`，其他几个平台是`Sundaland on mind`。

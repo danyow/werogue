@@ -180,7 +180,7 @@ var _hmt = _hmt || [];
     
   
   <!-- 文章内容 -->
-  <p>PS: 原版本好像是听不了了</p>
+  <p>PS: 原版本好像是听不了了。</p>
 
 <p><a href="https://music.163.com/#/song?id=755131">原版</a></p>
 
@@ -228,28 +228,24 @@ var _hmt = _hmt || [];
 <a id="htmldown" name="htmldown"></a>
 <!-- 引入评论模块 -->
 
+  <section class="post-footer-item comment">
+    <div id="vcomments"></div>
+  </section>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    new Valine({
+      el: '#vcomments' ,
+      appId: '8p5b5ijAhra6L5yC2Bx35j5I-9Nh9j0Va',
+      appKey: '3JSPKAso6Dos7iClmAqOpLzQ',
+      notify:false, 
+      verify:false, 
+      avatar:'mp', 
+      placeholder: 'just say something' 
+    });
+  </script>
 
 
-    <section class="post-footer-item comment">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80ODk2Mi8yNTQ1Ng=="></div>
-    </section>
 
-    <!-- 来必力City版安装代码 -->
-    <script type="text/javascript">
-       (function(d, s) {
-           var j, e = d.getElementsByTagName(s)[0];
-
-           if (typeof LivereTower === 'function') { return; }
-
-           j = d.createElement(s);
-           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-           j.async = true;
-
-           e.parentNode.insertBefore(j, e);
-       })(document, 'script');
-    </script>
-    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    <!-- City版安装代码已完成 -->
 
 
 
@@ -264,7 +260,7 @@ var _hmt = _hmt || [];
         Top
     </div>
   </a>
-  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+  <a title="底部有评论哦" class="gotobottom" href="#htmldown" target="_self">
     <div class="box" style="font-family:'ffad_matroregular';">
         Foot
     </div>

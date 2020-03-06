@@ -2,7 +2,7 @@
 layout  : post
 title   : 泪城！我来了！
 date    : 2020-03-06 02:00:00 +0800
-tags    : [音乐, 封面, 游戏]
+tags    : [音乐, 封面, 游戏原声]
 color   : RGB(131, 140, 149)
 cover   : 'http://p1.music.126.net/JQHPZWKeEtS6BvhOIZdedg==/109951163547764643.jpg'
 music   : City of Tears

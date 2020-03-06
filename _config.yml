@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: 'We🧞Rogue'
+title      : 'We🧞Rogue'
 description: '🧞'
-keywords: 'rogue, music'
-url: 'https://www.werogue.com' # your host
+keywords   : 'rogue, music'
+url        : 'https://www.werogue.com' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
@@ -13,35 +13,35 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   Apples: '/apples.html'
 
 # 博主
-author: true
-name: 'Danyow'
-NickName: 'danyow'
-webtitle: 'We Rogue'
-bio: '🧞'
-about: true
-aboutyou: ''
+author   : true
+name     : 'Danyow'
+NickName : 'danyow'
+webtitle : 'We Rogue'
+bio      : '🧞'
+about    : true
+aboutyou : ''
 portraits: '/assets/profile.jpg' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:i.zuucol@gmail.com'
-  weixin: '../assets/qrcode.wechat.png' # 你的微信二维码存放的地址
-  github: 'https://github.com/danyow'
-  weibo: 'https://weibo.com/u/2190813887'
+  mail     : 'mailto:i.zuucol@gmail.com'
+  weixin   : '../assets/qrcode.wechat.png' # 你的微信二维码存放的地址
+  github   : 'https://github.com/danyow'
+  weibo    : 'https://weibo.com/u/2190813887'
   instagram: 'https://www.instagram.com/danyowed'
-  Twitter: 'https://twitter.com/danyowed'
-  zhihu: 'https://www.zhihu.com/people/danyowed'
-  # qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  # Codepen: ''
-  # Dribbble: ''
-  # Facebook: ''
-  # Google: ''
-  # juejin: ''
-  # twitch: ''
+  Twitter  : 'https://twitter.com/danyowed'
+  zhihu    : 'https://www.zhihu.com/people/danyowed'
+  # qq       : '' # 你的qq二维码存放的地址 or http:                    //wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  # Codepen  : ''
+  # Dribbble : ''
+  # Facebook : ''
+  # Google   : ''
+  # juejin   : ''
+  # twitch   : ''
 
 # 分页
-paginate: 100
+paginate: 4
 paginatepath: ['page:num']
 
 # since
@@ -64,31 +64,35 @@ friends:
   HardCandy-Jekyll🍬: 'https://github.com/xukimseven/HardCandy-Jekyll/'
 
 # 评论 最佳体验 在disqus、livere和Gitment之间三选一
+# Valine 评论
+valine: true
+valine_id: 8p5b5ijAhra6L5yC2Bx35j5I-9Nh9j0Va
+valine_key: 3JSPKAso6Dos7iClmAqOpLzQ
 # disqus 评论
-disqus: false
-disqus_url: 'https://werogue.disqus.com/count.js' # https://abc.disqus.com/embed.js
+disqus    : false
+disqus_url: 'https://werogue.disqus.com/count.js' # https: //abc.disqus.com/embed.js
 # 来必力评论
-livere: true
+livere    : false
 livere_uid: 'MTAyMC80ODk2Mi8yNTQ1Ng=='
 # Gitment评论 OAuth Application
 Gitment: false
 # Gitalk评论 OAuth Application
 Gitalk: false
 # git评论相关
-Github_owner: 'danyow'  # github用户名
-Github_repo: 'werogue'  # github博客存放的仓库名
-client_id: 'fd75cc92f60d49935050'  # 注册 OAuth Application 后获得的 client_id
+Github_owner : 'danyow'  # github用户名
+Github_repo  : 'werogue'  # github博客存放的仓库名
+client_id    : 'fd75cc92f60d49935050'  # 注册 OAuth Application 后获得的 client_id
 client_secret: 'c60ee2d21b758ed39eae57e0592592f35146b942'  # 注册 OAuth Application 后获得的 client_secret
 
 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
-social-share: true
+social-share      : true
 social-share-items: ['wechat', 'weibo', 'douban', 'qq', 'qzone']
 
 # 百度统计 在baidu-url里填写自己相关的url代码
-baidu: true
+baidu    : true
 baidu-url: 'b24faa7b3b06c200499d49a031f8fc8a'
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: true
+google   : true
 google-ID: 'G-DCWQHCZV1D'
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
