@@ -1,4 +1,27 @@
 ---
 layout: music-base
 ---
-<article class="song-page"><a class="back-link" href="{{ '/' | relative_url }}">← 回唱片架</a><header class="song-header"><div class="cover-frame song-cover"><span class="cover-fallback" aria-hidden="true">封面暂缺<span>MUSIC ARCHIVE</span></span>{% if page.cover %}<img src="{{ page.cover | replace_first: 'http:', 'https:' | escape }}" alt="{{ page.music | default: page.title | escape }} 封面" width="800" height="800" fetchpriority="high">{% endif %}</div><div class="song-heading"><p class="eyebrow">{% if page.kind == 'daily' %}DAILY PICK / 每日一首{% else %}FROM THE SHELF / 旧收藏{% endif %}</p><h1>{{ page.music | default: page.title | escape }}</h1><p class="featured-artist">{{ page.artist | join: ' / ' | escape }}</p><p class="song-subtitle">{{ page.title | escape }}</p><dl class="song-facts"><div><dt>{% if page.kind == 'daily' %}整理日期{% else %}收藏归档{% endif %}</dt><dd><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y.%m.%d' }}</time></dd></div>{% if page.album %}<div><dt>专辑</dt><dd>{{ page.album | escape }}</dd></div>{% endif %}{% if page.release_date %}<div><dt>发行日期</dt><dd>{{ page.release_date | escape }}</dd></div>{% endif %}{% if page.original_collected_at %}<div><dt>最初收藏</dt><dd>{{ page.original_collected_at | escape }}</dd></div>{% endif %}</dl>{% if page.resource.music %}<a class="action-link" href="{{ page.resource.music | escape }}" target="_blank" rel="noopener noreferrer">去听这首 <span aria-hidden="true">↗</span></a>{% endif %}<div class="song-tags">{% for tag in page.tags %}<a href="{{ '/tags.html' | relative_url }}#{{ tag | uri_escape }}">{{ tag | escape }}</a>{% endfor %}</div></div></header><div class="song-body">{{ content }}</div>{% if page.sources %}<aside class="source-note"><h2>资料出处</h2>{% for source in page.sources %}<p><a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.label | escape }} ↗</a>{% if source.checked_at %}<span> · 核对 {{ source.checked_at | escape }}</span>{% endif %}</p>{% endfor %}</aside>{% endif %}<p class="rights-note">封面及音乐版权归原权利人所有。本站仅作收藏记录，不托管音频。</p></article>
+<article class="song-page">
+  <a class="back-link" href="{{ '/' | relative_url }}">← 回唱片架</a>
+  <header class="song-header">
+    <div class="cover-frame song-cover"><span class="cover-fallback" aria-hidden="true">封面暂缺<span>MUSIC ARCHIVE</span></span>{% if page.cover %}<img src="{{ page.cover | replace_first: 'http:', 'https:' | escape }}" alt="{{ page.music | default: page.title | escape }} 封面" width="800" height="800" fetchpriority="high">{% endif %}</div>
+    <div class="song-heading">
+      <p class="eyebrow">{% if page.kind == 'track' %}SONG NOTE / 单曲记录{% elsif page.kind == 'daily' %}ARCHIVED NOTE / 早期整理{% else %}FROM THE SHELF / 旧收藏{% endif %}</p>
+      <h1>{{ page.music | default: page.title | escape }}</h1>
+      <p class="featured-artist">{{ page.artist | join: ' / ' | escape }}</p>
+      <p class="song-subtitle">{{ page.title | escape }}</p>
+      <dl class="song-facts">
+        <div><dt>{% if page.kind == 'track' %}收录日期{% elsif page.kind == 'daily' %}整理日期{% else %}收藏归档{% endif %}</dt><dd><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y.%m.%d' }}</time></dd></div>
+        {% if page.album %}<div><dt>专辑</dt><dd>{{ page.album | escape }}</dd></div>{% endif %}
+        {% if page.release_date %}<div><dt>发行日期</dt><dd>{{ page.release_date | escape }}</dd></div>{% endif %}
+        {% if page.duration %}<div><dt>时长</dt><dd>{{ page.duration | escape }}</dd></div>{% endif %}
+        {% if page.original_collected_at %}<div><dt>最初收藏</dt><dd>{{ page.original_collected_at | escape }}</dd></div>{% endif %}
+      </dl>
+      {% if page.resource.music %}<a class="action-link" href="{{ page.resource.music | escape }}" target="_blank" rel="noopener noreferrer">{% if page.origin == 'spotify' %}在 Spotify 听这首{% else %}去听这首{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
+      <div class="song-tags">{% for tag in page.tags %}<a href="{{ '/tags.html' | relative_url }}#{{ tag | uri_escape }}">{{ tag | escape }}</a>{% endfor %}</div>
+    </div>
+  </header>
+  <div class="song-body">{{ content }}</div>
+  {% if page.sources %}<aside class="source-note"><h2>资料出处</h2>{% for source in page.sources %}<p><a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.label | escape }} ↗</a>{% if source.checked_at %}<span> · 核对 {{ source.checked_at | escape }}</span>{% endif %}</p>{% endfor %}</aside>{% endif %}
+  <p class="rights-note">封面及音乐版权归原权利人所有。本站仅作收藏记录，不托管音频。</p>
+</article>
