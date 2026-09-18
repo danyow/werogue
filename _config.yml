@@ -19,7 +19,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 plugins_dir: []
-# Legacy pagination plugins are deliberately not loaded.
 safe: true
 future: false
 strict_front_matter: true
@@ -39,6 +38,8 @@ exclude:
   - .bundle
   - .gitignore
   - build-check.json
+  - external-review
+  - assets/fonts
 defaults:
   - scope:
       path: ""
