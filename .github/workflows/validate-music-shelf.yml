@@ -1,0 +1,31 @@
+name: Validate music shelf
+on:
+  push:
+    branches: [master, 'refactor/music-shelf-*']
+  pull_request:
+    branches: [master]
+permissions:
+  contents: read
+concurrency:
+  group: music-shelf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with GitHub Pages Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Check pages, music catalog and local links
+        run: python3 scripts/check_site.py
+      - name: Upload reviewable static site
+        uses: actions/upload-artifact@v4
+        with:
+          name: werogue-preview
+          path: _site/
+          retention-days: 7
+          if-no-files-found: error

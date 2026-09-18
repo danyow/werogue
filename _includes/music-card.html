@@ -1,0 +1,11 @@
+{% assign record = include.record %}
+<article class="record-card" data-record data-search="{{ record.music | escape }} {{ record.artist | join: ' ' | escape }} {{ record.title | escape }} {{ record.tags | join: ' ' | escape }}">
+  <a class="cover-frame" href="{{ record.url | relative_url }}" aria-label="查看 {{ record.music | default: record.title | escape }}">
+    <span class="cover-fallback" aria-hidden="true">封面暂缺<span>MUSIC ARCHIVE</span></span>
+    {% if record.cover %}<img src="{{ record.cover | replace_first: 'http:', 'https:' | escape }}" alt="{{ record.music | default: record.title | escape }} 封面" loading="lazy" decoding="async" width="600" height="600">{% endif %}
+  </a>
+  <div class="record-meta"><span>{{ record.tags | last | escape }}</span><time datetime="{{ record.date | date: '%Y-%m-%d' }}">{{ record.date | date: '%Y.%m' }}</time></div>
+  <h3><a href="{{ record.url | relative_url }}">{{ record.music | default: record.title | escape }}</a></h3>
+  <p class="record-artist">{{ record.artist | join: ' / ' | escape }}</p>
+  <p class="record-note">{{ record.title | escape }}</p>
+</article>

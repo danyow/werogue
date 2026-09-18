@@ -1,32 +1,5 @@
 ---
-layout: default
-title: Tags
-page-title: Tags
-home-title: Take my hand.
-description:
+layout: music-base
+title: 按标签找歌
 ---
-
-{% include header.html %}
-{% include boot.html %}
-<main>
-    {% include title.html %}
-    <ul class="ex-list">
-        <li class="fadeInUp animated">
-        {% if site.tags.size>0 %}
-            {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        {% endif %}
-        </li>
-        {% for tag in site.tags %}
-        <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
-            {% for post in tag[1] %}
-            <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            {% endfor %}
-        </li>
-
-        {% endfor%}
-    </ul>
-</main>
-{% include footer.html %}
+<section class="page-intro"><p class="eyebrow">TAKE MY HAND</p><h1>按标签找歌</h1><p>风格只是路标，不用分得太清。</p></section><div class="tag-directory">{% for tag in site.tags %}<a href="#{{ tag[0] | uri_escape }}">{{ tag[0] | escape }}</a>{% endfor %}</div>{% for tag in site.tags %}<section class="tag-section" id="{{ tag[0] | escape }}"><h2>{{ tag[0] | escape }}</h2><div class="simple-list">{% for post in tag[1] %}<a href="{{ post.url | relative_url }}"><span>{{ post.music | default: post.title | escape }}<small>{{ post.artist | join: ' / ' | escape }}</small></span><span class="tiny">{% if post.kind == 'daily' %}每日一首{% else %}收藏{% endif %} · {{ post.date | date: '%Y.%m.%d' }}</span></a>{% endfor %}</div></section>{% endfor %}

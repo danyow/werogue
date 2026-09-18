@@ -1,24 +1,5 @@
 ---
-layout: default
-title: Apples
-page-title: Apples
-home-title: You are the apple of my eye.
-description:
+layout: music-base
+title: 朋友与鸣谢
 ---
-
-{% include header.html %}
-{% include boot.html %}
-<main>
-    {% include title.html %}
-    <ul class="ex-list">
-        <li  class="fadeInUp animated">
-          {% for friend in site.friends %}
-            <span class="tag-name" >
-                <a href="{{ friend[1] }}">「&emsp;{{ friend[0] }}&emsp;」</a>
-            </span>
-                </br>
-          {% endfor %}
-        </li>
-    </ul>
-</main>
-{% include footer.html %}
+<section class="page-intro"><p class="eyebrow">APPLES</p><h1>路过的朋友。</h1><p>You are the apple of my eye.</p></section><div class="prose"><p><a href="https://danyow.cn/">Danyow · 个人网站 ↗</a></p><p><a href="https://jekyllrb.com/">Jekyll · 静态生成 ↗</a></p><p><a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes · 当前主题基础 ↗</a></p><p><a href="https://github.com/xukimseven/HardCandy-Jekyll/">HardCandy-Jekyll · 旧站主题，感谢陪伴 ↗</a></p></div>

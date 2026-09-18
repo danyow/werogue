@@ -1,0 +1,6 @@
+---
+layout: music-base
+title: 每日一首
+permalink: /daily/
+---
+<section class="page-intro"><p class="eyebrow">DAILY PICKS</p><h1>今天留哪一首？</h1><p>每天从收藏里翻出一首。不打分，也不抢榜。</p></section><div class="daily-list">{% assign daily = site.posts | where: 'kind', 'daily' %}{% for post in daily %}<article class="daily-row"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y.%m.%d' }}</time><div><h2><a href="{{ post.url | relative_url }}">{{ post.music | escape }}</a></h2><p>{{ post.artist | join: ' / ' | escape }} · {{ post.title | escape }}</p><p class="tiny">{{ post.summary | escape }}</p></div><a href="{{ post.url | relative_url }}" aria-label="阅读 {{ post.music | escape }}">↗</a></article>{% else %}<p>第一首还在整理。</p>{% endfor %}</div>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141718">
+  <title>{% if page.music %}{{ page.music | escape }} · {% elsif page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="{% if page.music %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.music | default: page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page.summary | default: site.description | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.cover %}<meta property="og:image" content="{{ page.cover | replace_first: 'http:', 'https:' | absolute_url | escape }}">{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/music.scss' | replace: '.scss', '.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="WeRogue 音乐收藏" href="{{ '/feed.xml' | relative_url }}">
+  <script defer src="{{ '/assets/js/music-shelf.js' | relative_url }}"></script>
+</head>
+<body class="music-site">
+  <a class="skip-link" href="#content">跳到内容</a>
+  <header class="site-bar">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="WeRogue 首页"><span class="brand-disc" aria-hidden="true"></span><span>we<span class="brand-divider">/</span>rogue</span></a>
+    <nav aria-label="主导航">
+      <a href="{{ '/' | relative_url }}">唱片架</a>
+      <a href="{{ '/daily/' | relative_url }}">每日一首</a>
+      <a href="{{ '/time_line.html' | relative_url }}">时间线</a>
+      <a href="{{ '/remember_me.html' | relative_url }}">关于</a>
+    </nav>
+  </header>
+  <main class="site-main" id="content">{{ content }}</main>
+  <footer class="site-footer"><div><strong>We🧞Rogue</strong><p>After all this time? Always.</p></div><div><a href="{{ '/tags.html' | relative_url }}">按标签找歌</a><a href="{{ '/apples.html' | relative_url }}">朋友与鸣谢</a><a href="{{ '/feed.xml' | relative_url }}">RSS</a><p>© 2020–{{ site.time | date: '%Y' }} danyow · Jekyll / Minimal Mistakes</p></div></footer>
+</body>
+</html>
