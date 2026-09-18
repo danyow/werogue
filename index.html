@@ -2,14 +2,14 @@
 layout: music-base
 title: 唱片架
 ---
-{% assign daily = site.posts | where: 'kind', 'daily' %}
-{% assign featured = daily | first %}
+{% assign tracks = site.posts | where: 'kind', 'track' %}
+{% assign featured = tracks | first %}
 {% assign records = site.posts | where_exp: 'item', "item.kind != 'daily'" %}
-<section class="intro"><p class="eyebrow">A PERSONAL MUSIC SHELF</p><h1>一首歌，<br>留一会儿。</h1><p>收好封面，也留下当时的一两句话。</p></section>
+<section class="intro"><p class="eyebrow">A PERSONAL MUSIC SHELF</p><h1>一首歌，<br>留一会儿。</h1><p>把 Spotify 里听过的歌慢慢收好，一首一篇。</p></section>
 {% if featured %}
 <section class="featured" aria-labelledby="featured-title">
-  <a class="cover-frame featured-cover" href="{{ featured.url | relative_url }}" aria-label="阅读 {{ featured.music | escape }}"><span class="cover-fallback" aria-hidden="true">封面暂缺<span>DAILY PICK</span></span>{% if featured.cover %}<img src="{{ featured.cover | replace_first: 'http:', 'https:' | escape }}" alt="{{ featured.music | escape }} 封面" width="800" height="800" fetchpriority="high">{% endif %}</a>
-  <div class="featured-copy"><div class="eyebrow">DAILY PICK <span>每日一首 · {{ featured.date | date: '%Y.%m.%d' }}</span></div><h2 id="featured-title">{{ featured.music | escape }}</h2><p class="featured-artist">{{ featured.artist | join: ' / ' | escape }}</p><p class="featured-note">{{ featured.title | escape }}</p><p class="muted">{{ featured.summary | escape }}</p><div class="featured-actions"><a class="action-link" href="{{ featured.url | relative_url }}">读这首的短记 <span aria-hidden="true">↗</span></a>{% if featured.resource.music %}<a href="{{ featured.resource.music | escape }}" target="_blank" rel="noopener noreferrer">去听 ↗</a>{% endif %}</div><p class="tiny">旧收藏回看，不是播放量排行榜。</p></div>
+  <a class="cover-frame featured-cover" href="{{ featured.url | relative_url }}" aria-label="阅读 {{ featured.music | escape }}"><span class="cover-fallback" aria-hidden="true">封面暂缺<span>LATEST RECORD</span></span>{% if featured.cover %}<img src="{{ featured.cover | replace_first: 'http:', 'https:' | escape }}" alt="{{ featured.music | escape }} 封面" width="800" height="800" fetchpriority="high">{% endif %}</a>
+  <div class="featured-copy"><div class="eyebrow">LATEST RECORD <span>最新收录 · {{ featured.date | date: '%Y.%m.%d' }}</span></div><h2 id="featured-title">{{ featured.music | escape }}</h2><p class="featured-artist">{{ featured.artist | join: ' / ' | escape }}</p><p class="featured-note">{{ featured.title | escape }}</p><p class="muted">{{ featured.summary | escape }}</p><div class="featured-actions"><a class="action-link" href="{{ featured.url | relative_url }}">读这首的短记 <span aria-hidden="true">↗</span></a>{% if featured.resource.music %}<a href="{{ featured.resource.music | escape }}" target="_blank" rel="noopener noreferrer">{% if featured.origin == 'spotify' %}在 Spotify 听{% else %}去听{% endif %} ↗</a>{% endif %}</div><p class="tiny">每首歌一篇新短记，收进唱片架。</p></div>
 </section>
 {% endif %}
 <section class="shelf" id="shelf" aria-labelledby="shelf-title"><div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="shelf-title">放在这里的歌<span class="count">{{ records.size }}</span></h2></div><a href="{{ '/time_line.html' | relative_url }}">沿时间翻一翻 ↗</a></div><div class="filter-bar"><label for="record-search">找一首歌</label><input id="record-search" type="search" placeholder="歌名、音乐人，或者一种心情…" autocomplete="off"><span id="search-status" class="tiny" role="status" aria-live="polite">{{ records.size }} 首收藏</span></div><noscript><p class="tiny">搜索需要 JavaScript；下面仍可浏览全部收藏。</p></noscript><div class="record-grid">{% for record in records %}{% include music-card.html record=record %}{% endfor %}</div><p id="search-empty" hidden>暂时没找到。换个词，或者把搜索框清空。</p></section>
