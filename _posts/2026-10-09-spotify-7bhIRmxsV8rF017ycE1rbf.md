@@ -32,7 +32,7 @@ tags:
 summary: 散步与感激并排出现，让日常多出一小段认真张望的时间。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-10-02'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
