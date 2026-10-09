@@ -30,7 +30,7 @@ tags:
 summary: 从一个普通夜晚的名字出发，给日常的小小圆满留一点位置。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-09-28'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
