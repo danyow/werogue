@@ -30,7 +30,7 @@ tags:
 summary: 把回忆当作一条可以重走的路，在熟悉的转角容许片刻停留。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-09-30'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
