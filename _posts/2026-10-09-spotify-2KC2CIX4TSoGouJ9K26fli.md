@@ -30,7 +30,7 @@ tags:
 summary: 把两首相邻发行的合作连起来看，从远方转向沿途。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-10-04'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
