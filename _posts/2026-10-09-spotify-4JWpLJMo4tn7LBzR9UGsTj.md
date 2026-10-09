@@ -30,7 +30,7 @@ tags:
 summary: 从专辑开篇的一圈平静，读到休息所需要的具体空间。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-10-01'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
