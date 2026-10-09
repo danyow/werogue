@@ -28,7 +28,7 @@ tags:
 summary: 沿着专辑的山间休憩意象，把太阳读成方向与温度。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-09-29'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
