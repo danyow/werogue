@@ -28,7 +28,7 @@ tags:
 summary: 午夜倒数之后、回家之前，从“根”读到对来处的回望。
 listening_evidence: spotify-recent-listening-query
 review_status: generated
-published: true
+published: false
 entry_type: backfill
 backfill_for: '2026-10-07'
 editorial_note: 本次补录于2026年10月9日整理，补录标记仅对应维护缺口，不代表当日收听或当时选曲。
